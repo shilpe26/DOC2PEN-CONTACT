@@ -27,7 +27,7 @@ html, body {
   .page-content {
     grid-template-columns: auto;
     margin: 20px auto;
-    width: 60%;
+    width: 80%;
   }
 }
 
