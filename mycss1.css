@@ -44,7 +44,7 @@ html, body {
   .page-content1 {
     grid-template-columns: auto;
     grid-template-columns: auto;
-    margin: 10px auto;
+    margin: 20px auto;
     width: 70%;
   }
 }
