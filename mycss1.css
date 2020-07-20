@@ -14,104 +14,47 @@ html, body {
   height: 100%;
 }
 
-body {
-  display: grid;
-  place-items: center;
-}
-.head{
-    font-size: 40px;
-    font-family: 'Rubik', sans-serif;
-    background-image: linear-gradient(to right,#80d8ff,white);
-}
 .page-content {
   display: grid;
-  grid-gap: 2rem;
-  padding: 1rem;
+  grid-template-columns: auto auto;
+  grid-gap: 5rem;
+  padding: 3rem;
   max-width: 1024px;
   margin: 0 auto;
   font-family: var(--font-sans);
 }
-@media (min-width: 600px) {
+@media (max-width: 800px) {
   .page-content {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-@media (min-width: 800px) {
-  .page-content {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
-
-@media (min-width: 600px) {
-  .page-content1 {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-@media (min-width: 800px) {
-  .page-content1 {
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: auto;
+    margin: 20px auto;
+    width: 60%;
   }
 }
 
 .page-content1 {
-  display: grid;
-  grid-gap: 3rem;
-  padding: 1rem;
-  max-width: 1024px;
-  margin: 0 auto;
-  font-family: var(--font-sans);
+    display: grid;
+    grid-gap: 2rem;
+    padding: 1rem;
+    grid-template-columns: 20% 20% 20% 20% 20% ;
+    max-width: 1024px;
+    margin: 0 auto;
+    font-family: var(--font-sans);
 }
-@media (min-width: 600px) {
+@media (max-width: 800px) {
   .page-content1 {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: auto;
+    grid-template-columns: auto;
+    margin: 20px auto;
+    width: 60%;
   }
-}
-@media (min-width: 800px) {
-  .page-content1 {
-    grid-template-columns: repeat(4, 1fr);
-  }
-}
-
-
-.card1{
-    margin-top: 18%;
-    margin-left: 50%;
-    
-}
-.card2{
-    margin-top: 18%;
-    margin-left: 70%;
-}
-.card3{
-     margin-top: 23%;
-    margin-left: -40%;
-    grid-gap: 3rem;
-}
-.card4{
-     margin-top: 23%;
-    margin-left: -10%;
-    grid-gap: 3rem;
-    height: 100%;
-    display: block;
-}
-.card5{
-     margin-top: 23%;
-    margin-left: 31%;
-    grid-gap: 3rem;
-}
-.card6{
-     margin-top: 23%;
-    margin-left: 60%;
 }
 
 .card {
-    position: relative;
-  display: -webkit-box;
-  display: flex;
-  -webkit-box-align: end;
-          align-items: flex-end;
-  overflow: hidden;
+  position: relative;
+overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end ;
   padding: 1rem;
   width: 100%;
   text-align: center;
@@ -205,6 +148,7 @@ body {
   font-size: 20px;
   font-weight: bold;
   line-height: 1.2;
+  text-shadow: 1px 1px 2px black;
 }
 
 .copy {
