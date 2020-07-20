@@ -26,8 +26,8 @@ html, body {
 @media (max-width: 800px) {
   .page-content {
     grid-template-columns: auto;
-    margin: 20px auto;
-    width: 80%;
+    margin: 10px auto;
+    width: 100%;
   }
 }
 
